@@ -1,0 +1,126 @@
+.header__sf {
+    background-image: url(../assets/bg_resize_1.jpg);
+    height: 680px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.nav__sf img {
+    width: 80px;
+}
+
+.nav__sf-bg {
+    background-image: linear-gradient(to right,#1f2877, #e5ecf1);
+}
+
+h1  {
+    color: #0c283b;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 27pt;
+    margin-top: px;
+    margin-bottom: 150px;
+}
+
+.pricing .card {
+border: none;
+border-radius: 1rem;
+transition: all 0.2s;
+box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.pricing hr {
+margin: 1.5rem 0;
+}
+
+.pricing .card-title {
+margin: 0.5rem 0;
+font-size: 0.9rem;
+letter-spacing: .1rem;
+font-weight: bold;
+}
+
+.pricing .card-price {
+font-size: 3rem;
+margin: 0;
+}
+
+.pricing .card-price .period {
+font-size: 0.8rem;
+}
+
+.pricing ul li {
+margin-bottom: 1rem;
+}
+
+.about__sf img{
+    width: 650px;
+}
+
+.team__sf img {
+    height: 350px;
+}
+
+footer img {
+    width: 100px;
+}
+
+.contrtact__sf {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .pricing .card-price {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+    .pricing ul li {
+        margin-bottom: 0;
+    }
+        
+    h1 {
+        margin-bottom: 180px;
+        font-size: 35pt;
+    
+    }
+
+    h3 {
+        font-size: 28pt;
+    }
+
+    .none__sf {
+        display: none;
+    }
+
+    .contrtact__sf {
+        display: block;
+        padding: 10px 40px;
+        width: 180px;
+        background-color: #1f2877;
+        margin-bottom: 30px;
+    }
+       
+}
+
+@media (max-width: 850px) {
+    .pricing .card-price {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    h1 {
+        margin-bottom: 150px;
+        font-size: 23pt;
+    }
+
+    h3 {
+        font-size: 20pt;
+    }
+
+    .none__sf {
+        display: none;
+    }
+}

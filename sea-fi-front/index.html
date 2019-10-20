@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sea-Fi</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light nav__sf-bg static-top nav__sf fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/1a_versao.png" alt="Logo da empresa Sea-Fi">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon menu__sf" ></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold text-uppercase" href="">Home
+
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold text-uppercase" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold text-uppercase" href="#time">Dream Team</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="header__sf">
+        <div class="container pt-5">
+            <div class="row pt-lg-5">
+                <div class="col-md-12 col-lg-5 pt-5">
+                    <div class="pt-5">
+                        <h1>A vida é muito curta, </br>
+                            A nossa conexão não!
+                        </h1>
+                    </div>
+                    <div class="mt-5">
+                        <h3 class="font-weight-bold text-white mb-0 text-center">Tenha uma solução, de baixo custo, como alternativa
+                            ao acesso a conexão via satélite direta.
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-7">
+                    <section class="pricing py-5 none__sf mt-5 my-md-0 mt-lg-5">
+                        <div class="container">
+                            <div class="row">
+
+                                <!-- PF -->
+                                <div class="col-md-6 col-lg-6">
+                                    <div class="card mb-5 mb-lg-0">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-muted text-uppercase text-center">PF</h5>
+                                            <h6 class="card-price text-center">R$80<span class="period">/mês</span></h6>
+                                            <hr>
+                                            <ul class="fa-ul none__sf-2">
+                                                <li><span class="fa-li"><i class="fas fa-check none__sf"></i></span>10MB
+                                                    de Download
+                                                </li>
+                                                <li class=""><span class="fa-li"><i class="fas fa-check "></i></span>1MB
+                                                    de Upload
+                                                </li>
+                                                <li><span class="fa-li"><i class="fas fa-check none__sf"></i></span>Usar
+                                                    no perímetro</li>
+                                            </ul>
+                                            <a href="#" class="btn btn-block btn-primary text-uppercase"
+                                                data-toggle="modal" data-target="#modalExemplo">Contratar</a>
+                                            <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLabel">Plano PF</h5>
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Fechar">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form class="needs-validation d-flex justify-content-center"
+                                                                name="contact" netlify action="./alert.html">
+                                                                <div class="form-row">
+                                                                    <div class="container col-md-7 mb-1">
+                                                                        <p class="font-weight-bold mt-4">Dados Pessoais
+                                                                        </p>
+                                                                        <label for="validationCustom01">Nome</label>
+                                                                        <input name="first_name" type="text"
+                                                                            class="form-control" id="validationCustom01"
+                                                                            placeholder="Nome">
+                                                                    </div>
+                                                                    <div class="container col-md-7 mb-1">
+                                                                        <label for="validationCustomUsername">Data de
+                                                                            Nascimento</label>
+                                                                        <input name="email" type="date" required
+                                                                            class="form-control"
+                                                                            id="validationCustomUsername"
+                                                                            placeholder="00/00/0000">
+                                                                    </div>
+                                                                    <div class="container col-md-7 mb-1">
+                                                                        <label
+                                                                            for="validationCustomUsername">CPF</label>
+                                                                        <input name="email" type="text" maxlength="11"
+                                                                            class="form-control"
+                                                                            id="validationCustomUsername"
+                                                                            placeholder="Só números">
+                                                                    </div>
+                                                                    <div class="container col-md-7 mb-1">
+                                                                        <label
+                                                                            for="validationCustomUsername">E-mail</label>
+                                                                        <input name="email" type="email"
+                                                                            class="form-control"
+                                                                            id="validationCustomUsername"
+                                                                            placeholder="nome@email.com">
+                                                                    </div>
+                                                                    <div class="container col-md-7 mb-1">
+                                                                        <label for="validationCustom03">Celular</label>
+                                                                        <input name="phone" type="text"
+                                                                            class="form-control" id="validationCustom03"
+                                                                            placeholder="DDD + número">
+
+                                                                    </div>
+                                                                    <div class="container col-md-7 mb-1">
+                                                                        <p class="font-weight-bold mt-4">Forma de
+                                                                            Pagamento</p>
+                                                                        <label
+                                                                            for="validationCustomUsername">Bandeira</label>
+                                                                        <select class="custom-select"
+                                                                            id="inputGroupSelect01">
+                                                                            <option selected>Escolher...</option>
+                                                                            <option value="1">Mastercard</option>
+                                                                            <option value="2">visa</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="container col-md-7 mb-1">
+                                                                        <label
+                                                                            for="validationCustomUsername">Número</label>
+                                                                        <input name="email" type="text" maxlength="12"
+                                                                            class="form-control"
+                                                                            id="validationCustomUsername"
+                                                                            placeholder="Só números">
+                                                                    </div>
+                                                                    <div class="container col-md-7 mb-1">
+                                                                        <label for="validationCustomUsername">Nome do
+                                                                            Titular</label>
+                                                                        <input name="email" type="text"
+                                                                            class="form-control"
+                                                                            id="validationCustomUsername"
+                                                                            placeholder="Nome impresso no cartão">
+                                                                    </div>
+                                                                    <div class="container col-md-7 mb-1">
+                                                                        <label
+                                                                            for="validationCustomUsername">Vencimento</label>
+                                                                        <input name="email" type="date"
+                                                                            class="form-control"
+                                                                            id="validationCustomUsername"
+                                                                            placeholder="Nome impresso no cartão">
+                                                                        <label for="validationCustomUsername"
+                                                                            class="mt-1">CCV</label>
+                                                                        <input name="email" type="date" maxlength="3"
+                                                                            class="form-control"
+                                                                            id="validationCustomUsername"
+                                                                            placeholder="Código de segurança">
+                                                                    </div>
+
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary"
+                                                                            data-dismiss="modal">Cancelar</button>
+                                                                        <button type="button" class="btn btn-primary"
+                                                                            data-toggle="modal"
+                                                                            data-target="#modalExemplo2">Contratar</button>
+                                                                    </div>
+                                                                    <div class="modal fade" id="modalExemplo2"
+                                                                        tabindex="-1" role="dialog"
+                                                                        aria-labelledby="exampleModalLabel"
+                                                                        aria-hidden="true">
+                                                                        <div class="modal-dialog" role="document">
+                                                                            <div class="modal-content">
+                                                                                <div class="modal-header">
+                                                                                    <h5 class="modal-title"
+                                                                                        id="exampleModalLabel"></h5>
+                                                                                    <button type="button" class="close"
+                                                                                        data-dismiss="modal"
+                                                                                        aria-label="Fechar">
+                                                                                        <span
+                                                                                            aria-hidden="true">&times;</span>
+                                                                                    </button>
+                                                                                </div>
+                                                                                <div class="modal-body">
+                                                                                    <p class="font-weight-bold mb-3">
+                                                                                        Compra aprovada com sucesso!</p>
+                                                                                    <p>Usuario: usuario123
+                                                                                    </p>
+                                                                                    <p>Senha: 12345</p>
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- PJ -->
+                                <div class="col-md-6 col-lg-6">
+                                    <div class="card mb-5 mb-lg-0">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-muted text-uppercase text-center">PJ</h5>
+                                            <h6 class="card-price text-center">R$349<span class="period">/mês</span>
+                                            </h6>
+                                            <hr>
+                                            <ul class="fa-ul none__sf-2">
+                                                <li><span class="fa-li"><i class="fas fa-check"></i></span>20MB
+                                                    de Download</li>
+                                                <li><span class="fa-li"><i class="fas fa-check"></i></span>3MB de Upload
+                                                </li>
+                                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Usar em
+                                                    qualquer lugar</li>
+                                            </ul>
+                                            <a href="#" class="btn btn-block btn-primary text-uppercase"
+                                                data-toggle="modal" data-target="#modalExemplo3">Contratar</a>
+                                            <div class="modal fade" id="modalExemplo3" tabindex="-1" role="dialog"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLabel">Plano PJ</h5>
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Fechar">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form class="needs-validation d-flex justify-content-center"
+                                                                name="contact" netlify action="./alert.html">
+                                                                <div class="form-row">
+                                                                    <div class="container col-md-7 mb-1">
+                                                                        <p class="font-weight-bold mt-4">Dados da
+                                                                            Empresa
+                                                                        </p>
+                                                                        <label for="validationCustom01">Razão
+                                                                            Social</label>
+                                                                        <input name="first_name" type="text"
+                                                                            class="form-control" id="validationCustom01"
+                                                                            placeholder="Nome">
+                                                                    </div>
+                                                                    <div class="container col-md-7 mb-1">
+                                                                        <label for="validationCustomUsername">Endereço
+                                                                            Completo</label>
+                                                                        <input name="email" type="text" required
+                                                                            class="form-control"
+                                                                            id="validationCustomUsername"
+                                                                            placeholder="Avenida 1, 56, Centro, São Paulo - SP">
+                                                                    </div>
+                                                                    <div class="container col-md-7 mb-1">
+                                                                        <label
+                                                                            for="validationCustomUsername">CNPJ</label>
+                                                                        <input name="email" type="text" maxlength="14"
+                                                                            class="form-control"
+                                                                            id="validationCustomUsername"
+                                                                            placeholder="Só números">
+                                                                    </div>
+                                                                    <div class="container col-md-7 mb-1">
+                                                                        <label
+                                                                            for="validationCustomUsername">E-mail</label>
+                                                                        <input name="email" type="email"
+                                                                            class="form-control"
+                                                                            id="validationCustomUsername"
+                                                                            placeholder="nome@email.com">
+                                                                    </div>
+                                                                    <div class="container col-md-7 mb-1">
+                                                                        <label for="validationCustom03">Celular</label>
+                                                                        <input name="phone" type="text"
+                                                                            class="form-control" id="validationCustom03"
+                                                                            placeholder="DDD + número">
+
+                                                                    </div>
+                                                                    <div class="container col-md-7 mb-1">
+                                                                        <p class="font-weight-bold mt-4">Forma de
+                                                                            Pagamento</p>
+                                                                        <label
+                                                                            for="validationCustomUsername">Bandeira</label>
+                                                                        <select class="custom-select"
+                                                                            id="inputGroupSelect01">
+                                                                            <option selected>Escolher...</option>
+                                                                            <option value="1">Mastercard</option>
+                                                                            <option value="2">visa</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="container col-md-7 mb-1">
+                                                                        <label
+                                                                            for="validationCustomUsername">Número</label>
+                                                                        <input name="email" type="text" maxlength="12"
+                                                                            class="form-control"
+                                                                            id="validationCustomUsername"
+                                                                            placeholder="Só números">
+                                                                    </div>
+                                                                    <div class="container col-md-7 mb-1">
+                                                                        <label for="validationCustomUsername">Nome do
+                                                                            Titular</label>
+                                                                        <input name="email" type="text"
+                                                                            class="form-control"
+                                                                            id="validationCustomUsername"
+                                                                            placeholder="Nome impresso no cartão">
+                                                                    </div>
+                                                                    <div class="container col-md-7 mb-1">
+                                                                        <label
+                                                                            for="validationCustomUsername">Vencimento</label>
+                                                                        <input name="email" type="date"
+                                                                            class="form-control"
+                                                                            id="validationCustomUsername"
+                                                                            placeholder="Nome impresso no cartão">
+                                                                        <label for="validationCustomUsername"
+                                                                            class="mt-1">CCV</label>
+                                                                        <input name="email" type="date" maxlength="3"
+                                                                            class="form-control"
+                                                                            id="validationCustomUsername"
+                                                                            placeholder="Código de segurança">
+                                                                    </div>
+
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary"
+                                                                            data-dismiss="modal">Cancelar</button>
+                                                                        <button type="button" class="btn btn-primary"
+                                                                            data-toggle="modal"
+                                                                            data-target="#modalExemplo2">Contratar</button>
+                                                                    </div>
+                                                                    <div class="modal fade" id="modalExemplo2"
+                                                                        tabindex="-1" role="dialog"
+                                                                        aria-labelledby="exampleModalLabel"
+                                                                        aria-hidden="true">
+                                                                        <div class="modal-dialog" role="document">
+                                                                            <div class="modal-content">
+                                                                                <div class="modal-header">
+                                                                                    <h5 class="modal-title"
+                                                                                        id="exampleModalLabel"></h5>
+                                                                                    <button type="button" class="close"
+                                                                                        data-dismiss="modal"
+                                                                                        aria-label="Fechar">
+                                                                                        <span
+                                                                                            aria-hidden="true">&times;</span>
+                                                                                    </button>
+                                                                                </div>
+                                                                                <div class="modal-body">
+                                                                                    <p class="font-weight-bold mb-3">
+                                                                                        Compra aprovada com sucesso!</p>
+                                                                                    <p>Usuario: usuario123
+                                                                                    </p>
+                                                                                    <p>Senha: 12345</p>
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="py-lg-5 py-3 container" id="sobre">
+            <div class="">
+                <h3 class="font-weight-bold text-uppercase">Sobre</h3>
+                <div class="">
+                    <div>
+                        <h5 class="my-5 text-center font-weight-bold">Quantas horas você se conecta por dia?</h3>
+                            <p>A Sea-Fi nasceu da necessidade das pessoas se manterem conectadas. Você já imaginou as
+                                possibilidades de manter uma conexão em seus dispositivos, mesmo no oceano? Nós viemos
+                                tornar isso possível.</p>
+                            <p>Através de dispositivos de Internet das Coisas (IoT), distribuídos estratégicamente ao
+                                longo
+                                da área costeira do estado de São Paulo, você consegue se conectar ao restante do mundo
+                                através da nossa rede.</p>
+                            <p>Fale com a família, saiba das atualizações do seu time, pesquise, poste nas redes
+                                sociais, veja as atualizações de clima em tempo real, reporte uma situação de risco, comunique seus dados em tempo real, entre outros. Você não precisa
+                                ficar sem informações ou entreterimento por não ter acesso à internet, venha ser Sea-Fi.
+                            </p>
+                            <p>Com planos mais acessveis e flexíveis, somos a melhor opção disponível no mercado
+                                referente à conexão no mar.</p>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" class="btn btn-block btn-primary text-uppercase contrtact__sf"
+                                    data-toggle="modal" data-target="#modalExemplo5">Contratar</a>
+                                </div>
+                            <div class="modal fade" id="modalExemplo5" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Plano PF</h5>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Fechar">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form class="needs-validation d-flex justify-content-center"
+                                                name="contact" netlify action="./alert.html">
+                                                <div class="form-row">
+                                                    <div class="container col-md-7 mb-1">
+                                                        <p class="font-weight-bold mt-4">Dados Pessoais
+                                                        </p>
+                                                        <label for="validationCustom01">Nome</label>
+                                                        <input name="first_name" type="text"
+                                                            class="form-control" id="validationCustom01"
+                                                            placeholder="Nome">
+                                                    </div>
+                                                    <div class="container col-md-7 mb-1">
+                                                        <label for="validationCustomUsername">Data de
+                                                            Nascimento</label>
+                                                        <input name="email" type="date" required
+                                                            class="form-control"
+                                                            id="validationCustomUsername"
+                                                            placeholder="00/00/0000">
+                                                    </div>
+                                                    <div class="container col-md-7 mb-1">
+                                                        <label
+                                                            for="validationCustomUsername">CPF</label>
+                                                        <input name="email" type="text" maxlength="11"
+                                                            class="form-control"
+                                                            id="validationCustomUsername"
+                                                            placeholder="Só números">
+                                                    </div>
+                                                    <div class="container col-md-7 mb-1">
+                                                        <label
+                                                            for="validationCustomUsername">E-mail</label>
+                                                        <input name="email" type="email"
+                                                            class="form-control"
+                                                            id="validationCustomUsername"
+                                                            placeholder="nome@email.com">
+                                                    </div>
+                                                    <div class="container col-md-7 mb-1">
+                                                        <label for="validationCustom03">Celular</label>
+                                                        <input name="phone" type="text"
+                                                            class="form-control" id="validationCustom03"
+                                                            placeholder="DDD + número">
+
+                                                    </div>
+                                                    <div class="container col-md-7 mb-1">
+                                                        <p class="font-weight-bold mt-4">Forma de
+                                                            Pagamento</p>
+                                                        <label
+                                                            for="validationCustomUsername">Bandeira</label>
+                                                        <select class="custom-select"
+                                                            id="inputGroupSelect01">
+                                                            <option selected>Escolher...</option>
+                                                            <option value="1">Mastercard</option>
+                                                            <option value="2">visa</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="container col-md-7 mb-1">
+                                                        <label
+                                                            for="validationCustomUsername">Número</label>
+                                                        <input name="email" type="text" maxlength="12"
+                                                            class="form-control"
+                                                            id="validationCustomUsername"
+                                                            placeholder="Só números">
+                                                    </div>
+                                                    <div class="container col-md-7 mb-1">
+                                                        <label for="validationCustomUsername">Nome do
+                                                            Titular</label>
+                                                        <input name="email" type="text"
+                                                            class="form-control"
+                                                            id="validationCustomUsername"
+                                                            placeholder="Nome impresso no cartão">
+                                                    </div>
+                                                    <div class="container col-md-7 mb-1">
+                                                        <label
+                                                            for="validationCustomUsername">Vencimento</label>
+                                                        <input name="email" type="date"
+                                                            class="form-control"
+                                                            id="validationCustomUsername"
+                                                            placeholder="Nome impresso no cartão">
+                                                        <label for="validationCustomUsername"
+                                                            class="mt-1">CCV</label>
+                                                        <input name="email" type="date" maxlength="3"
+                                                            class="form-control"
+                                                            id="validationCustomUsername"
+                                                            placeholder="Código de segurança">
+                                                    </div>
+
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Cancelar</button>
+                                                        <button type="button" class="btn btn-primary"
+                                                            data-toggle="modal"
+                                                            data-target="#modalExemplo6">Contratar</button>
+                                                    </div>
+                                                    <div class="modal fade" id="modalExemplo6"
+                                                        tabindex="-1" role="dialog"
+                                                        aria-labelledby="exampleModalLabel"
+                                                        aria-hidden="true">
+                                                        <div class="modal-dialog" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title"
+                                                                        id="exampleModalLabel"></h5>
+                                                                    <button type="button" class="close"
+                                                                        data-dismiss="modal"
+                                                                        aria-label="Fechar">
+                                                                        <span
+                                                                            aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <p class="font-weight-bold mb-3">
+                                                                        Compra aprovada com sucesso!</p>
+                                                                    <p>Usuario: usuario123
+                                                                    </p>
+                                                                    <p>Senha: 12345</p>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team__sf" id="time">
+            <div class="bg-primary text-center ">
+                <div class="container">
+                    <h1 class="font-weight-bold text-white py-5 text-uppercase">Dream Team</h1>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xl-4 col-md-6 mb-4">
+                        <div class="card border-0 shadow">
+                            <img src="./assets/ana.jpeg" class="card-img-top" alt="Foto de uma mulher vestindo calça jeans, camiseta branca e jaqueta rosa">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-0">Ana Anjos</h5>
+                                <div class="card-text text-black-50">Marketing</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6 mb-4">
+                        <div class="card border-0 shadow">
+                            <img src="./assets/deb.jpeg" class="card-img-top" alt="Foto de uma mulher de cabelo curto, usando óculos e camiseta branca">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-0">Déborah Leite</h5>
+                                <div class="card-text text-black-50">Designer</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6 mb-4">
+                        <div class="card border-0 shadow">
+                            <img src="./assets/jeff.jpeg" class="card-img-top" alt="Foto de um homem usando óculos, terno preto, camisa social branca e gravata listrada">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-0">Jeferson Leal</h5>
+                                <div class="card-text text-black-50">Developer</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6 mb-4">
+                        <div class="card border-0 shadow">
+                            <img src="./assets/siane.jpg" class="card-img-top" alt="Foto de uma mulher usando uma camista preta e uma credencial">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-0">Jessiane</h5>
+                                <div class="card-text text-black-50">Web Developer</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 mb-4">
+                        <div class="card border-0 shadow">
+                            <img src="./assets/roger.jpeg" class="card-img-top" alt="Foto de um homem, segurando um computador e vestindo jaqueta de couro preta">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-0">Rogerio Rodrigues</h5>
+                                <div class="card-text text-black-50">Negócios</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            </div>
+        </section>
+    </main>
+    <footer class="d-flex justify-content-center bg-dark py-4 mt-5">
+        <img src="./assets/monocromatica.png" alt="Logo monocoromático da Sea-Fi">
+        
+    </footer>
+
+
+
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
