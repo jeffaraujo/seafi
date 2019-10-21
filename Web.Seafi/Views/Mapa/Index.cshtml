@@ -14,10 +14,10 @@
     }
 </style>
 <!--Link do API do Google com a chave gerada no Firebase-->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_A2z7ohEi0oqOvayhw0fNmMoch_uMhEo"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=PUT_YOUR_KEY_FIREBASE"></script>
 <div id="mapDiv"></div>
 <script type="text/javascript">
-    var draw_circle = null;  //Redesenhando o objeto cÌrculo no primeiro refresh
+    var draw_circle = null;  //Redesenhando o objeto c√≠rculo no primeiro refresh
     function DisplayGoogleMap() {
         //Configurando valores de latitude e longetude
         var latitudePrincipal = -24.19937417;
@@ -57,7 +57,7 @@
         var longitude011 = -44.196463;
        
         //Configurando a latitude e longetude
-        var PontoPrincipal = new google.maps.LatLng(latitudePrincipal, longitudePrincipal); //N„o usado no MVP0
+        var PontoPrincipal = new google.maps.LatLng(latitudePrincipal, longitudePrincipal); //N√£o usado no MVP0
         var Ponto001 = new google.maps.LatLng(latitude001, longitude001);
         var Ponto002 = new google.maps.LatLng(latitude002, longitude002);
         var Ponto003 = new google.maps.LatLng(latitude003, longitude003);
@@ -70,7 +70,7 @@
         var Ponto010 = new google.maps.LatLng(latitude010, longitude010);
         var Ponto011 = new google.maps.LatLng(latitude011, longitude011);
 
-        //OpÁıes iniciais do Google Maps
+        //Op√ß√µes iniciais do Google Maps
         var mapOptions = {
             center: PontoPrincipal,
             zoom: 7.5,
@@ -80,11 +80,11 @@
 
         //Mostre o Google Maps na DIV
         var map = new google.maps.Map(document.getElementById("mapDiv"), mapOptions);
-        let url = "http://maps.google.com/mapfiles/kml/pal4/icon61.png" //EndereÁo do Ìcone
-        let urlDesativado = "http://maps.google.com/mapfiles/kml/pal4/icon53.png" //N„o usado
+        let url = "http://maps.google.com/mapfiles/kml/pal4/icon61.png" //Endere√ßo do √≠cone
+        let urlDesativado = "http://maps.google.com/mapfiles/kml/pal4/icon53.png" //N√£o usado
 
 
-        //Configurando a msg do bal„o (N„o usado no MVP0)
+        //Configurando a msg do bal√£o (N√£o usado no MVP0)
         var contentStringPrincipal = '<div id="content">'+
                               '<div id="siteNotice">'+
                               '</div>'+
@@ -99,7 +99,7 @@
             content: contentStringPrincipal
         });
 
-        //Configurando a msg do bal„o
+        //Configurando a msg do bal√£o
         var contentString001 = '<div id="content">'+
                               '<div id="siteNotice">'+
                               '</div>'+
@@ -115,7 +115,7 @@
         });
 
 
-        //Configurando a msg do bal„o
+        //Configurando a msg do bal√£o
         var contentString002 = '<div id="content">'+
                               '<div id="siteNotice">'+
                               '</div>'+
@@ -131,7 +131,7 @@
         });
 
 
-        //Configurando a msg do bal„o
+        //Configurando a msg do bal√£o
          var contentString003 = '<div id="content">'+
                               '<div id="siteNotice">'+
                               '</div>'+
@@ -147,7 +147,7 @@
         });
 
 
-        //Configurando a msg do bal„o
+        //Configurando a msg do bal√£o
          var contentString004 = '<div id="content">'+
                               '<div id="siteNotice">'+
                               '</div>'+
@@ -164,7 +164,7 @@
 
 
 
-        //Configurando a msg do bal„o
+        //Configurando a msg do bal√£o
          var contentString005 = '<div id="content">'+
                               '<div id="siteNotice">'+
                               '</div>'+
@@ -179,7 +179,7 @@
             content: contentString005
         });
 
-        //Configurando a msg do bal„o
+        //Configurando a msg do bal√£o
         var contentString006 = '<div id="content">'+
                               '<div id="siteNotice">'+
                               '</div>'+
@@ -194,7 +194,7 @@
             content: contentString006
         });
 
-        //Configurando a msg do bal„o
+        //Configurando a msg do bal√£o
          var contentString007 = '<div id="content">'+
                               '<div id="siteNotice">'+
                               '</div>'+
@@ -209,7 +209,7 @@
             content: contentString007
         });
 
-        //Configurando a msg do bal„o
+        //Configurando a msg do bal√£o
         var contentString008 = '<div id="content">'+
                               '<div id="siteNotice">'+
                               '</div>'+
@@ -224,7 +224,7 @@
             content: contentString008
         });
 
-        //Configurando a msg do bal„o
+        //Configurando a msg do bal√£o
         var contentString009 = '<div id="content">'+
                               '<div id="siteNotice">'+
                               '</div>'+
@@ -239,7 +239,7 @@
             content: contentString009
         });
 
-        //Configurando a msg do bal„o
+        //Configurando a msg do bal√£o
         var contentString010 = '<div id="content">'+
                               '<div id="siteNotice">'+
                               '</div>'+
@@ -254,7 +254,7 @@
             content: contentString010
         });
 
-        //Configurando a msg do bal„o
+        //Configurando a msg do bal√£o
          var contentString011 = '<div id="content">'+
                               '<div id="siteNotice">'+
                               '</div>'+
@@ -270,7 +270,7 @@
         });
 
         
-        //Configure o maker (N„o usado no MVP0)
+        //Configure o maker (N√£o usado no MVP0)
         var markerPrincipal = new google.maps.Marker({
             position: PontoPrincipal,
             animation: google.maps.Animation.BOUNCE,
@@ -278,7 +278,7 @@
                 url: url
             }
         });
-        //Evento clique para aparecer o bal„o (N„o usado no MVP0)
+        //Evento clique para aparecer o bal√£o (N√£o usado no MVP0)
         markerPrincipal.addListener('click', function() {
             infowindowPrincipal.open(map, markerPrincipal);
         });
@@ -291,7 +291,7 @@
                 url: url
             }
         });
-        //Evento clique para aparecer o bal„o
+        //Evento clique para aparecer o bal√£o
         marker001.addListener('click', function() {
             infowindow001.open(map, marker001);
         });
@@ -305,7 +305,7 @@
                 url: url
             }
         });
-        //Evento clique para aparecer o bal„o
+        //Evento clique para aparecer o bal√£o
          marker002.addListener('click', function() {
             infowindow002.open(map, marker002);
         });
@@ -319,7 +319,7 @@
                 url: url
             }
         });
-        //Evento clique para aparecer o bal„o
+        //Evento clique para aparecer o bal√£o
         marker003.addListener('click', function() {
             infowindow003.open(map, marker003);
         });
@@ -332,7 +332,7 @@
                 url: url
             }
         });
-        //Evento clique para aparecer o bal„o
+        //Evento clique para aparecer o bal√£o
         marker004.addListener('click', function() {
             infowindow004.open(map, marker004);
         });
@@ -345,7 +345,7 @@
                 url: url
             }
         });
-        //Evento clique para aparecer o bal„o
+        //Evento clique para aparecer o bal√£o
         marker005.addListener('click', function() {
             infowindow005.open(map, marker005);
         });
@@ -358,7 +358,7 @@
                 url: url
             }
         });
-        //Evento clique para aparecer o bal„o
+        //Evento clique para aparecer o bal√£o
         marker006.addListener('click', function() {
             infowindow006.open(map, marker006);
         });
@@ -370,7 +370,7 @@
                 url: url
             }
         });
-        //Evento clique para aparecer o bal„o
+        //Evento clique para aparecer o bal√£o
         marker007.addListener('click', function() {
             infowindow007.open(map, marker007);
         });
@@ -383,7 +383,7 @@
                 url: url
             }
         });
-        //Evento clique para aparecer o bal„o
+        //Evento clique para aparecer o bal√£o
         marker008.addListener('click', function() {
             infowindow008.open(map, marker008);
         });
@@ -395,7 +395,7 @@
                 url: url
             }
         });
-        //Evento clique para aparecer o bal„o
+        //Evento clique para aparecer o bal√£o
         marker009.addListener('click', function() {
             infowindow009.open(map, marker009);
         });
@@ -407,7 +407,7 @@
                 url: url
             }
         });
-        //Evento clique para aparecer o bal„o
+        //Evento clique para aparecer o bal√£o
         marker010.addListener('click', function() {
             infowindow010.open(map, marker010);
         });
@@ -419,7 +419,7 @@
                 url: url
             }
         });
-        //Evento clique para aparecer o bal„o
+        //Evento clique para aparecer o bal√£o
         marker011.addListener('click', function() {
             infowindow011.open(map, marker011);
         });
@@ -440,7 +440,7 @@
         marker010.setMap(map);
         marker011.setMap(map);
 
-        //Desenhe os cÌrculos
+        //Desenhe os c√≠rculos
         draw_circle = null;
         DrawCircle(map, Ponto001);
         draw_circle = null;
@@ -468,7 +468,7 @@
     //Mostra o mapa na tela
     DisplayGoogleMap(); 
     
-    //FunÁ„o para desenhar o cÌrculo
+    //Fun√ß√£o para desenhar o c√≠rculo
     function DrawCircle(map, center) {
         rad = 64373
         if (draw_circle != null) {
